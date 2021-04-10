@@ -4,50 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Join Fauna's Community Slack</title>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@fauna">
+    <meta name="twitter:title" content="Fauna | Join the Fauna Community">
+    <meta name="twitter:description" content="Get your questions answered and share your knowledge">
+    <meta name="twitter:image" content="https://community.fauna.com/fauna-twitter-card.png">
+    <meta property="og:description" content="Get your questions answered and share your knowledge">
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://community.fauna.com">
+    <meta property="og:image" content="https://community.fauna.com/fauna-twitter-card.png">
+    <meta property="og:title" content="Fauna | Join the Fauna Community">
+
+    <title>Fauna | Join the Fauna Community</title>
+    <link rel="stylesheet" href="https://use.typekit.net/gep4mwn.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="index.css" />
-    <link href="https://fauna.com/assets/pardot/pardot-lean-style.css" rel="stylesheet" />
     <script type="text/javascript" src="/script.js"></script>
   </head>
 
   <body class="non-gated">
-    <div class="bg-wrapper">  </div>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <header class="logo-header"><div class="container">
-          <div class="row">
-              <div class="col-md-12 vcenter">
-                 <a href="http://www.fauna.com" class="scrollto">
-                    <div class="logo">
-                         <img title="FaunaDB Logo" src="https://fauna.com/assets/pardot/img/Fauna_logo_white_web.png"></div>
-                </a>
-            </div><!-- col-md-9 -->
-          </div><!-- row -->
-      </div><!-- container -->
+    <header class="logo-header">
+      <a href="http://www.fauna.com" class="scrollto">
+        <img title="FaunaDB Logo" width="110px" src="https://www2.fauna.com/l/517431/2020-11-09/71jx1q/517431/1604976704Uwq7P7Jw/fauna_logo.svg">
+      </a>
     </header>
-    <main class="container">
-      <div class="row vpadding ngw-wrapper">
-        <div id="ngw-entry-content">
-          <div class="editable title">
-            <h1>Join Fauna's Community Slack</h1>
-          </div>
-          <div id="flash-wrapper">
-          </div>
-          <div class="editable">
-            <div id="form-wrapper" class="col-md-12 clearfix">
-              <div class="editable clearfix">
-                <form class="form" method="post" action="/.netlify/functions/request-slack-invite">
-                  <label>Email address to send invitation: </label>
-                  <input name="email" type="email" />
-                  <input type="submit" />
-                </form>
-              </div>
+    <main>
+      <div class="content-wrapper">
+        <h1 class="intro">Join the Fauna Community! <small>Get your questions answered and share your knowledge.</small></h1>
+        <div class="row">
+          <section>
+            <div class="description">
+<!--               <div class="logo"><img alt="discourse-logo" src="img/discourse_logo.png"/></div> -->
+              <h2>Fauna Forums</h2>
+              <p>
+                For help from the Fauna team, or to make roadmap feature requests, use the forums. We monitor the forums very closely and respond promptly.
+              </p>
             </div>
-            <p>
-              If you are already a member, <a href="https://fauna-community.slack.com/">click here to sign in.</a>
-            </p>
-          </div>
+            <div class="discourse-link">
+              <a class="button" href="https://forums.fauna.com/c/feature-requests">Feature Requests</a>
+              <a class="button" style="justify-content: center; flex: 1; margin-left: 15px;" href="https://forums.fauna.com/c/help-general">Help</a>
+            </div>
+          </section>
+          <section>
+              <div class="description">
+<!--                 <div class="logo"><img alt="slack-logo" src="img/slack_logo.png"/></div> -->
+                <h2>Fauna Community Slack</h2>
+                <p>Mingle with your peers, showcase your projects, and chat in real-time. If you are already a member, <a href="https://fauna-community.slack.com/">click here to sign in.</a>
+                </p>
+              </div>
+                <form class="form" method="post" action="/.netlify/functions/request-slack-invite">
+                  <input name="email" type="email" placeholder="enter e-mail" />
+                  <input type="submit" value="Join" />
+                </form>
+                <div id="flash-wrapper"></div>
+          </section>
         </div>
       </div>
     </main>
+    <footer>
+      <p><a href="https://github.com/fauna/public-slack-invite">Fork this code</a>&nbsp;(and deploy on Netlify) to invite people to your own Slack.</p>
+    </footer>
   </body>
 </html>
